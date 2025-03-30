@@ -171,7 +171,7 @@ class _TimerScreenState extends State<TimerScreen> with TickerProviderStateMixin
           _millisecondsController.stop();
 
           if (_round >= _totalRounds) {
-            nextRound();
+            skipRound();
           } else {
             startRest();
           }
